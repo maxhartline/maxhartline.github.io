@@ -1,0 +1,315 @@
+/* Reset default browser styles and set global styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    /* Includes padding in width calculation */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for navigation menus */
+
+.nav-menus {
+    background-color: #0056b3;
+    color: white;
+    width: 100%;
+}
+
+/* Header style and layout */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    text-align: left;
+}
+
+.header-text {
+    width: 100;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 35px;
+}
+
+.header-text p {
+    font-size: 20px;     
+  }
+
+.self-portrait {
+    width: 200px;
+    height: auto;   
+    margin-right: 100px;
+    border-radius: 5%;
+}                    
+
+.connect-button {
+    padding: 10px 20px;
+    background-color: #388ede;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.animated-text {
+    animation: slideInFromRight 5s;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(120%);    /* Slide in from the right */
+    }
+    to {
+        transform: translateX(0);       /* Slide in to the original position */
+    }
+}
+
+/* Nain content layout */
+
+main {
+    display: flex;            /* Use flexbox layout */
+    flex-direction: column;   /* Stack child elements vertically */
+    align-items: center;      /* Center child elements horizontally */
+    padding: 20px;
+}
+
+.content-section {
+    background-color: rgb(17, 16, 16);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.about-container {
+    display: flex;            /* Use flexbox layout */
+    flex-direction: row;      /* Align child elements horizontally */
+    align-items: center;      /* Center child elements vertically */
+    margin-top: 30px;         /* Add top margin for spacing */
+} 
+
+.about-text {
+    flex: 1;              /* Take up remaining space */
+    margin-left: 50px;
+}
+
+.about-image {
+    flex: 1;                   /* Take up remaining space */
+    text-align: center;        /* Center image horizontally */
+}
+
+.nscc-image {
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+.mission-container,
+.resume-container,
+.contact-container {
+    margin-top: 25px;
+}
+
+#skills h2{
+    display: block;
+    width: 100%;
+}
+
+#skills {
+    display: flex;                       /* Use flexbox layout */
+    flex-wrap: wrap;                     /* Allow items to wrap to the next line */
+    justify-content: space-between;      /* Distribute items evenly with space between */
+}
+
+#skills h4 {
+    font-size: 23px;       
+}
+
+.skill-container {
+    background-color: rgb(27, 25, 25);
+    padding: 10px;
+    border-radius: 5%;
+    margin: 10px 0;
+    text-align: center;
+    box-sizing: border-box;        /* Include padding in width calculation */
+}
+
+.skill-container ul {
+    list-style-type: none;        /* Remove bullet points */
+    margin-top: 20px;
+}
+
+.skill-item {
+    display: flex;                /* Use flexbox layout */
+    align-items: center;          /* Center items vertically */
+    justify-content: center;      /* Center items horizontally */
+    margin-bottom: 20px;          /* Add bottom margin for spacing */
+}
+
+.skill-text,
+.contact-text {
+    margin-left: 15px;           /* Adds space between logo and text */
+}
+
+.about-skills {
+    display: flex;               /* Use flexbox layout */
+    flex-wrap: wrap;             /* Allow items to wrap to the next line */
+    flex-direction: row;         /* Arrange items horizontally */
+    align-items: center;         /* Center items vertically */
+    margin-top: 30px;            /* Add top margin */
+}
+
+.skill-paragraph {
+    flex: 1;                   /* Take up remaining space */
+    margin-left: 50px;         /* Add left margin for spacing */
+}
+
+.skill-image {
+    flex: 1;                   /* Take up remaining space */
+    text-align: center;        /* Center image horizontally */
+}
+
+.skill-image img {
+    width: 70%; 
+}
+
+#projects h2{
+    display: block;           /* Ensure block-level display */
+    width: 100%;
+}
+
+#projects { 
+    display: flex;                        /* Use flexbox layout */
+    flex-wrap: wrap;                      /* Allow items to wrap to the next line */
+    justify-content: space-between;       /* Distribute items evenly with space between */
+}
+
+#projects h4 {
+    font-size: 23px;       
+}
+
+.project-container {
+    background-color: rgb(27, 25, 25);
+    padding: 15px;
+    border-radius: 5%;
+    margin: 10px 0;
+    text-align: center;
+    width: 10%;
+    box-sizing: border-box;       /* Include padding in width calculation */
+}
+
+.project-image {
+    width: 250px;
+    height: 150px;
+    border-radius: 5%;
+    max-width: 100%;
+}
+
+.resume-button-container {
+    text-align: center;
+}
+
+.resume-button {
+    padding: 1.5%;
+    background-color: #388ede;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    font-size: 90%;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.resume-button:hover,
+.connect-button:hover {
+    background-color: #0056b3;
+}
+
+.resume-button:hover span,
+.connect-button:hover span {
+    color: white;
+}
+
+form {         
+    margin: auto;
+    padding: 2%;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0 0 30px #027ff5;
+    color: black;
+    font: Arial;
+    text-align: center;
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 2%;
+    margin: 2% auto;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    font-size: 16px;
+    max-width: 100%;
+}
+
+input[type="submit"] {
+    padding: 5% 10%;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    background-color: #388ede;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.logo {
+    height: 30px;
+    width: auto;
+}
+
+.inline {
+    display: inline;
+    vertical-align: middle;
+}
+
+a {
+    color: #388ede;
+}
+
+a:hover {
+    color: #0056b3;
+}

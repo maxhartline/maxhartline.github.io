@@ -1,0 +1,131 @@
+/* media query for desktop */
+@media only screen and (min-width: 481px) {
+    header {
+        flex-direction: column;              /* Change the flex direction to column layout */
+        justify-content: space-between;      /* Distribute space evenly between items along the main axis */
+        align-items: center;                 /* Align items to the center along both axes */
+    }
+
+    .desktop-menu ul {             
+        display: flex;              /* Displays as flex container */
+        justify-content: center;    /* Centers children horizontally */
+        list-style-type: none;      /* Removes default list styling */
+    }
+
+    .desktop-menu ul li {
+        margin-right: 20px;      /* Spacing between menu items */
+    }
+
+    .desktop-menu ul li a {
+        display: block;
+        padding: 10px 20px;      /* Spacing around menu items */
+        text-decoration: none;
+        color: white;
+    }
+
+    .mobile-menu {
+        display: none;        /* Hide mobile menu */
+    }
+
+    #projects {         
+        display: flex;         /* Arrange project containers in a row on larger screens */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .about-container {
+        flex-direction: row;      /* Revert back to row layout */
+    }
+
+    .project-container {
+        width: 33%;          
+    }
+
+    .skill-container {
+        width: 33%;
+    }
+
+    form {
+        width: 30%; 
+    }
+}
+
+
+
+
+
+
+/* media query for mobile */
+@media only screen and (max-width: 480px) {
+    .header-content {
+        flex-direction: column;     /* Change to column layout for mobile */
+        align-items: center;
+        text-align: center;        /* Center text for mobile */
+    }
+    
+    .self-portrait {
+        margin-right: 0;            /* Remove margin on mobile */
+        margin-bottom: 20px;        /* Add margin on bottom for separation */
+    }
+
+    .desktop-menu {
+        display: none;        /* Hide desktop menu */
+    }
+
+    .mobile-menu {
+        display: block;      /* Show mobile menu */
+        padding: 2%;
+    }
+
+    .mobile-menu a {   
+        display: block;
+        padding: 5%;    
+        text-decoration: none;
+        color: white;
+    }   
+
+    .about-container {
+        flex-direction: column;       /* Change to a column layout */
+    }
+
+    .about-text,
+    .about-image {
+        flex: initial;           /* Reset flex to default */
+        text-align: center;      /* Center content */
+        margin: 0 auto;          /* Center horizontally */
+    }
+
+    .about-image {
+        margin-top: 40px;
+    }
+
+    .skill-paragraph,
+    .skill-image {
+        flex: initial;           /* Reset flex to default */
+        text-align: center;      /* Center content */
+        margin: 0 auto;          /* Center horizontally */
+    }
+
+    .skill-image {
+        margin-top: 40px;       /* Adds space between image and text */
+    }
+
+    .project-container {        
+        width: 100%;            /* Arrange project containers in a column on smaller screens */
+    }
+
+    .skill-container{
+        width: 100%;
+    }
+
+    form {
+        width: 90%; /* Adjust as needed for mobile */
+        padding: 5%;
+    }
+
+    input[type="submit"] {
+        width: 60%; /* Adjust submit button width for mobile */
+    }
+}
+
+
