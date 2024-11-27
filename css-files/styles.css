@@ -7,7 +7,7 @@ html {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    /* Includes padding in width calculation */
+    box-sizing: border-box;
 }
 
 body {
@@ -62,7 +62,7 @@ header {
     width: 200px;
     height: auto;   
     margin-right: 100px;
-    border-radius: 5%;
+    border-radius: 3%;
 }                    
 
 .connect-button {
@@ -130,7 +130,6 @@ main {
     border-radius: 5px;
 }
 
-.mission-container,
 .resume-container,
 .contact-container {
     margin-top: 25px;
